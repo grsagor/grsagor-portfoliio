@@ -12,7 +12,7 @@ const Email = () => {
         submitted,
         error,
         // sendEmail
-    } = UseEmail('https://public.herotofu.com/v1/b1091f00-7882-11ed-a126-b172cf164538');
+    } = UseEmail('https://public.herotofu.com/v1/22f810e0-789b-11ed-a126-b172cf164538');
 
     // const sendExample = () => {
     //     // Can be any data, static and dynamic
@@ -23,8 +23,9 @@ const Email = () => {
     // };
 
     return (
-        <div id='email' className='bg-base-200 pb-4 m-2'>
-            <header className="">
+        <div id='feedback' className='pb-4 mt-4 rounded-lg'>
+            <h2 className='text-3xl'>Feedback</h2>
+            <header>
                 {/* <img src={logo} className="App-logo" alt="logo" /> */}
                 <div style={{ margin: "1rem 0", fontSize: '2rem' }}>
                     {submitted && 'Done, email was sent!'}
@@ -32,7 +33,7 @@ const Email = () => {
                     {loading && 'Email is being sent now...'}
                 </div>
                 <div className='w-full max-w-xs mx-auto'>
-                    <form action="https://public.herotofu.com/v1/b1091f00-7882-11ed-a126-b172cf164538" method="post">
+                    <form action="https://public.herotofu.com/v1/22f810e0-789b-11ed-a126-b172cf164538" method="post">
                         <div className='w-full max-w-xs'>
                             <label className="label">
                                 <span className="label-text">What is your name?</span>

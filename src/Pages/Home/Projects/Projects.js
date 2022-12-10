@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div id='projects' className='bg-base-200 p-4 m-2'>
+        <div id='projects' className='bg-base-200 p-4 m-2 rounded-lg'>
             <h2 className='text-3xl mb-4'>My Projects</h2>
             <div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
@@ -16,7 +16,7 @@ const Projects = () => {
                                 <li className="mt-2">A special feature of verified users has explored in this website where the authority can verify a user and some action also made on this feature such as showing blue tick with the verified users.</li>
                             </ul>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary"><a href="https://assignment-12-49fd8.web.app/" target="_blank" rel="noreferrer">Visit Website</a></button>
+                                <button className="btn bg-violet-900"><a href="https://assignment-12-49fd8.web.app/" target="_blank" rel="noreferrer">Visit Website</a></button>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const Projects = () => {
                                 <li className="mt-2">A short feature of pagination named limit() is used in this website to show limited number of data in a specific component and the data is called in ascending order.</li>
                             </ul>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary"><a href="https://assignment-11-c14cb.web.app/" target="_blank" rel="noreferrer">Visit Website</a></button>
+                                <button className="btn bg-violet-900"><a href="https://assignment-11-c14cb.web.app/" target="_blank" rel="noreferrer">Visit Website</a></button>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ const Projects = () => {
                                 <li className="mt-2">Three types of login system implemented, they are Email and Password login, Google login and GitHub login.</li>
                             </ul>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary"><a href="https://assignment-10-40242.web.app/" target="_blank" rel="noreferrer">Visit Website</a></button>
+                                <button className="btn bg-violet-900"><a href="https://assignment-10-40242.web.app/" target="_blank" rel="noreferrer">Visit Website</a></button>
                             </div>
                         </div>
                     </div>

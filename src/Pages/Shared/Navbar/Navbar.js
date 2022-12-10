@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Pdf from '../../Home/Pdf/Pdf';
 
 const Navbar = () => {
 
     const menuItem = <React.Fragment>
-        <li><a href="#">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li title='GitHub, Facebook, Instagram'><a href="#links">Important Links</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li title='linkedIn, GitHub, Facebook, Instagram'><a href="#links">Important Links</a></li>
     </React.Fragment>
 
     return (
@@ -21,7 +22,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">GR Sagor</a>
+                <a className="btn btn-ghost normal-case text-xl">Golam Rahman Sagor</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
