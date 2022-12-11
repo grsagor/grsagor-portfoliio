@@ -1,14 +1,23 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Pdf from '../../Home/Pdf/Pdf';
 
 const Navbar = () => {
 
+    const location = useLocation();
+
+    console.log(location);
+
     const menuItem = <React.Fragment>
-        <li><a href="">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-        <li title='linkedIn, GitHub, Facebook, Instagram'><a href="#links">Important Links</a></li>
+        <li><Link to="/">Home</Link></li>
+        {
+            location.pathname === '/' && <>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </>
+        }
+        <li><a href="#feedback">Contact</a></li>
+        <li><Link to='/blogs'>Blogs</Link></li>
     </React.Fragment>
 
     return (
@@ -22,7 +31,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Golam Rahman Sagor</a>
+                <Link to='/' className="btn btn-ghost normal-case text-xl">Golam Rahman Sagor</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

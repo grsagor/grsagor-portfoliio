@@ -5,7 +5,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 const About = () => {
     return (
         <div id='about' className='bg-base-200 border rounded mb-2 mx-2'>
-            <h2 className='text-3xl m-2'>About</h2>
+            <h2 className='text-3xl m-2'>About Sagor,</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6'>
 
